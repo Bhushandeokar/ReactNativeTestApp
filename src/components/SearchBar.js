@@ -8,7 +8,10 @@ export default function SearchBar(props) {
       <ImageShow Image={require('../utils/assest/symbol/Vector.png')} />
       <TextInput
         style={styles.TextInputStyle}
+        onChangeText={() => {}}
+        onBlur={() => {}}
         placeholder={props.PlaceHolder}
+        placeholderTextColor={'#9B9B9B'}
       />
     </View>
   );
@@ -28,5 +31,6 @@ const styles = StyleSheet.create({
     width: '95%',
     height: 30,
     padding: 5,
+    color: 'black',
   },
 });
